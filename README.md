@@ -6,9 +6,11 @@ An application which sends security logs to an endpoint.
 
 ## Getting Started
 
-1. Run `npm run start` to host the Express application on `localhost:3200`.
+1. Run `npm install` 
 
-2. Go to [localhost:3200](http://localhost:3200) and check the console to see the Content Security Policy.
+2. Run `npm run start` to host the application on `localhost:3200`.
+
+3. Go to [localhost:3200](http://localhost:3200) and check the console to see the Content Security Policy.
 
 ```markdown
 Refused to load the stylesheet `https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css`
@@ -16,9 +18,9 @@ because it violates the following Content Security Policy directive: `"style-src
 Note that `style-src-elem` was not explicitly set, so 'style-src' is used as a fallback.
 ```
 
-3. Press the buttons to send security reports to `http://localhost:3000`
+4. Press the buttons to send security reports to `http://localhost:3000`
 
-4. Check out `app.js` lines 25 to 37:
+5. Check out `app.js` lines 25 to 37:
 
 ```javascript
 // Adds a Content Security Policy to the header on all responses:
