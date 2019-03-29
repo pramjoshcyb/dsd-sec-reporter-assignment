@@ -1,4 +1,6 @@
-# Node Logging API
+# Sec-Reporter
+
+An application which sends security logs to an endpoint.
 
 **CSP:** Content Security Policy
 
