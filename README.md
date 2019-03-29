@@ -18,7 +18,7 @@ because it violates the following Content Security Policy directive: `"style-src
 Note that `style-src-elem` was not explicitly set, so 'style-src' is used as a fallback.
 ```
 
-4. Press the buttons to send security reports to `http://localhost:3000`
+4. Press the buttons or refresh the page to send security reports to `http://localhost:3000/reports`
 
 5. Check out `app.js` lines 25 to 37:
 
