@@ -26,7 +26,7 @@ Note that `style-src-elem` was not explicitly set, so 'style-src' is used as a f
 // Adds a Content Security Policy to the header on all responses:
 app.get('/*', function (req, res, next) {
     /* The Content-Security-Policy, see: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
-    // Allows for directives to made which control what resources a web site will allow to load.
+    // Allows for directives to made which control what resources the browser will allow to load.
     // `default-src http` requires the page to be loaded via https
     // `style-src 'self'` requires all stylesheets to be from the origin where the document is served (must include port numbers)
     // `report-uri http:// ...` tells the browser to send a JSON payload containing details about breaches to the security policy
@@ -53,7 +53,7 @@ policy is breached.
 }
 ```
 
-## Shape of the Security Policies
+## Shape of the Custom Security Report
 
 The following is the shape of a the custom security report:
 
