@@ -40,8 +40,9 @@ function loadExternalResource(url) {
         .then((response) => {
             // console.log(response);
             const scripts = document.getElementById('scripts');
-            scripts.innerHTML = `
+            scripts.innerHTML = `<script>
                 ${response}
+                </script>
             `;
         })
         .catch(error => {
